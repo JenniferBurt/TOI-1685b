@@ -1,0 +1,4 @@
+# Juliet lc.dat and plots
+This directory contains the juliet light curve input file (lc.dat) along with a range of light curve plots associated with the transit fit presented in the paper.
+
+The nine columns in the file correspond to, Time (BJD_TDB), Normalized flux, Normalized flux error, Dataset label, Airmass, Centroid X offset, Centroid Y offset, PSF full-width half-maximum (FWHM) and PSF peak brightness. As these are not used to model the TESS light curves, these values are blank for the TESS data. For the MuSCAT2 data, entropy (a proxy for the PSF FWHM) is used in place of PSF FWHM, and PSF peak brightness is not used at set to 0. For the OMM data, total background across the target and comparison stars is used in place of PSF peak brightness. All values in the final five columns are normalized between -1 and 1 for any given dataset.  
